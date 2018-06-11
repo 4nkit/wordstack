@@ -50,8 +50,10 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         if (words.equals("Two words")) {
             intent = new Intent(this, MainActivity.class);
+            lp.setSummary("Two words");
         } else {
             intent = new Intent(this, Main2Activity.class);
+            lp.setSummary("Three words");
         }
 
 
